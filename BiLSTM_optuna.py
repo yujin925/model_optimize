@@ -5,8 +5,6 @@ BiLSTM Single-Shot 기반 6-DOF 시계열 예측 + Optuna 하이퍼파라미터 
 - 1단계: Optuna로 모델/학습 하이퍼파라미터 탐색 (val MSE 최소화, MedianPruner 적용)
 - 2단계: 최적 파라미터로 전체 재학습 (조기 종료) 후 테스트 평가 및 시각화
 
-실행 전 설치: pip install torch numpy pandas matplotlib tqdm optuna scikit-learn
-
 """
 
 import json
